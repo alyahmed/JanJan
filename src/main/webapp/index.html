@@ -13,6 +13,7 @@
         <!-- endbuild -->
         <!-- build:css assets/styles/main.css -->
         <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
         <!-- endbuild -->
     </head>
     <body ng-app="janjanApp">
@@ -44,8 +45,33 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/sockjs-client/dist/sockjs.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/json3/lib/json3.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+        <script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+        <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+        <!-- UI Bootstrap for angular -->
+        <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <!-- Google maps and deps -->
+        <!--<script src="bower_components/lodash/dist/lodash.min.js"></script>-->
+        <!--<script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>-->
+        <!-- File Upload Services -->
+        <!--<script src="bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script>-->
+        <!--<script src="bower_components/ng-file-upload/angular-file-upload.min.js"></script>-->
+        <!-- endbower -->
+        <!-- endbuild -->
 
     <!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+
     <script src="scripts/app/app.js"></script>
     <script src="scripts/app/app.constants.js"></script>
     <script src="scripts/components/auth/auth.service.js"></script>
@@ -104,9 +130,6 @@
     <script src="scripts/app/main/main.js"></script>
     <script src="scripts/app/main/main.controller.js"></script>
     <script src="scripts/components/auth/provider/auth.xauth.service.js"></script>
-    <script src="scripts/app/admin/tracker/tracker.js"></script>
-    <script src="scripts/app/admin/tracker/tracker.controller.js"></script>
-    <script src="scripts/components/tracker/tracker.service.js"></script>
     <!-- endbuild -->
 </body>
 </html>

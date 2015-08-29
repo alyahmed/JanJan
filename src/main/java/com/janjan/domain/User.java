@@ -18,7 +18,7 @@ import org.joda.time.DateTime;
  * A user.
  */
 @Entity
-@Table(name = "JHI_USER")
+@Table(name = "T_USER")
 public class User extends AbstractAuditingEntity implements Serializable {
 
     @Id
@@ -73,7 +73,7 @@ public class User extends AbstractAuditingEntity implements Serializable {
     @JsonIgnore
     @ManyToMany
     @JoinTable(
-            name = "JHI_USER_AUTHORITY",
+            name = "T_USER_AUTHORITY",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "name")})
     private Set<Authority> authorities = new HashSet<>();
