@@ -1,9 +1,9 @@
 {
-    "name": "JanJan",
-    "version": "0.0.0",
-    "appPath": "src/main/webapp",
-    "testPath": "src/test/javascript/spec",
-    "dependencies": {
+  "name": "JanJan",
+  "version": "0.0.0",
+  "appPath": "src/main/webapp",
+  "testPath": "src/test/javascript/spec",
+  "dependencies": {
     "stomp-websocket": "2.3.4",
     "sockjs-client": "0.3.4",
     "bootstrap": "3.3.4",
@@ -16,6 +16,7 @@
     "angular-resource": "1.4.0",
     "angular-cookies": "1.4.0",
     "angular-sanitize": "1.4.0",
+    "swagger-ui": "2.0.24",
     "angular-local-storage": "0.2.0",
     "angular-cache-buster": "0.4.3",
     "ngInfiniteScroll": "1.2.0"

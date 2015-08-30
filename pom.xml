@@ -44,8 +44,8 @@
         <run.addResources>false</run.addResources>
         <sonar-maven-plugin.version>2.3</sonar-maven-plugin.version>
         <spring-security.version>4.0.1.RELEASE</spring-security.version>
-        <springfox.version>2.0.3</springfox.version>
         <usertype-core.version>4.0.0.GA</usertype-core.version>
+        <swagger-springmvc.version>0.9.5</swagger-springmvc.version>
     </properties>
 
     <dependencies>
@@ -128,18 +128,21 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${springfox.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${springfox.version}</version>
+            <groupId>com.mangofactory</groupId>
+            <artifactId>swagger-springmvc</artifactId>
+            <version>${swagger-springmvc.version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.mapstruct</groupId>
-                    <artifactId>mapstruct</artifactId>
+                    <artifactId>jackson-module-scala_2.10</artifactId>
+                    <groupId>com.fasterxml.jackson.module</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>scalap</artifactId>
+                    <groupId>org.scala-lang</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>scala-compiler</artifactId>
+                    <groupId>org.scala-lang</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -594,27 +597,6 @@
             </dependencies>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>com.github.trecloux</groupId>
-                        <artifactId>yeoman-maven-plugin</artifactId>
-                        <version>0.4</version>
-                        <executions>
-                            <execution>
-                                <id>run-frontend-build</id>
-                                <phase>generate-resources</phase>
-                                <goals>
-                                    <goal>build</goal>
-                                </goals>
-                                <configuration>
-                                    <buildTool>grunt</buildTool>
-                                    <buildArgs>build --force --no-color</buildArgs>
-                                </configuration>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <yeomanProjectDirectory>${project.basedir}</yeomanProjectDirectory>
-                        </configuration>
-                    </plugin>
                     <plugin>
                         <artifactId>maven-clean-plugin</artifactId>
                         <version>2.5</version>

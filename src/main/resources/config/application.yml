@@ -33,7 +33,7 @@ swagger:
     title: JanJan API
     description: JanJan applications and beyond!
     version: 0.0.1
-    termsOfServiceUrl: http://jhipster.github.io/
+    termsOfServiceUrl: 
     contact:
     license: Apache 2.0
     licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
